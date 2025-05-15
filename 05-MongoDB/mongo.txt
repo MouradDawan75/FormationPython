@@ -45,4 +45,45 @@ db.users.find({'company.name': 'Deckow-Crist'}, {name:1, 'address.geo.lat':1})
 ###### Requêtes complèxes et opérateurs:
 
 -> Egalité:
+db.inventory.find({rating:7})
 
+## Opérateurs de comparaison: gt, gte, lt, lte, eq, nq, in, nin
+
+tous les opérateurs sont précédés par $
+
+db.inventory.find({rating : {$gt:7}})
+db.inventory.find({rating : {$gt:7}}).count() -> nbre d'items dont rating > 7
+
+-> rating > 7, pages > 250
+
+db.inventory.find({ rating : {$gt:7}, pages : {$gt: 250}})
+
+-> rating compris entre 5 et 9
+
+db.inventory.find({rating : {$in:[5,9]}})
+
+###### opérateurs logiques: and, or, nor (echec de toutes les conditions), not
+
+db.inventory.find({$or: [liste de conditions]})
+db.inventory.find({$or: [{rating:7}, {rating: 9}]})
+db.inventory.find({$and: [{rating:7}, {pages: 250}]})
+
+rating = 7 et pages >= 250 
+
+db.inventory.find({$and: [{rating:7}, {pages: {$gte: 250}}]})
+
+##### Autres opérateurs:
+
+# exists:
+
+db.inventory.find({pages: {$exists:true}}) -> les items contenant de pages
+db.inventory.find({pages: {$exists:false}}) -> les items ne contenant pas de pages
+
+items contenant des pages et pages > 350
+
+db.inventory.find({$and: [{pages: {$exists:true}},{pages: {$gt:350}}]})
+
+# lien doc: https://www.mongodb.com/docs/manual/reference/operator/query/exists/
+
+
+## Commandes testées dans mongosh
