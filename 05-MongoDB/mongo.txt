@@ -12,3 +12,37 @@ show collections
 db: vérifier la base en cours d'utilisation
 exit
 
+##### Ajout:
+
+db.employes.insertOne({})
+db.employes.insertMany([{}, {}])
+
+Nombre de documents dans une collection:
+
+db.employes.countDocuments()
+
+##### Recherches:
+db.employes.find() -> renvoie les 20 premiers documents par défaut
+db.employes.find().limit(3)
+
+##### filtres:
+db.employes.find({nom:"FEDERER"})
+db.employes.find({nom:"FEDERER"},{_id:0}) -> masquer l'_id
+db.employes.find({nom:"FEDERER"},{nom:1, prenom:1}) -> choisir ls attributs a afficher
+
+##### tri: sort
+
+db.employes.find().sort({nom:1}) -> ascendant
+db.employes.find().sort({nom:-1}) -> descendant
+
+##### sous documents:
+db.users.find({},{name:1, 'company.name':1})
+
+pour la company Deckow-Crist: affichez le name et la latitude
+
+db.users.find({'company.name': 'Deckow-Crist'}, {name:1, 'address.geo.lat':1})
+
+###### Requêtes complèxes et opérateurs:
+
+-> Egalité:
+

@@ -1,0 +1,43 @@
+[
+  {
+    "item": "journal",
+    "rating": 7,
+    "pages" : 400,
+    "instock": [
+      { "warehouse": "A", "qty": 5 },
+      { "warehouse": "C", "qty": 15 }
+    ]
+  },
+  {
+    "item": "notebook",
+     "rating": 7,
+    "instock": [{ "warehouse": "C", "qty": 5 }]
+  },
+  {
+    "item": "paper",
+    "rating": 9,
+    "pages" : 350,
+    "instock": [
+      { "warehouse": "A", "qty": 60 },
+      { "warehouse": "B", "qty": 15 }
+    ]
+  },
+  {
+    "item": "planner",
+     "rating": 8,
+    "pages" : 250,
+    "instock": [
+      { "warehouse": "A", "qty": 40 },
+      { "warehouse": "B", "qty": 5 }
+    ]
+  },
+  {
+    "item": "postcard",
+     "rating": 9,
+    "pages" : 3,
+    "instock": [
+      { "warehouse": "B", "qty": 15 },
+      { "warehouse": "C", "qty": 35 }
+    ]
+  }
+]
