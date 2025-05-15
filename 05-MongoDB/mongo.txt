@@ -1,0 +1,14 @@
+Installation:
+
+- MongoDB Community: lien: https://www.mongodb.com/try/download/community-edition
+- MongoSh: lien: https://www.mongodb.com/try/download/shell
+
+*** Commandes de base:
+
+help
+show databases
+use nom_database
+show collections
+db: vérifier la base en cours d'utilisation
+exit
+
