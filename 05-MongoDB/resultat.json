@@ -1,0 +1,18 @@
+[
+  {
+    "_id": {
+      "$oid": "682604ae042484a1153d5a0f"
+    },
+    "nom": "new_federer",
+    "prenom": "Roger",
+    "age": 39
+  },
+  {
+    "_id": {
+      "$oid": "6826ef21e225f466ca200e2d"
+    },
+    "nom": "NADAL",
+    "prenom": "Rafael",
+    "age": 37
+  }
+]
