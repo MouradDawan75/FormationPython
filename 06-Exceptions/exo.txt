@@ -1,0 +1,11 @@
+Ecrire un script qui choisit un nombre aléatoire compris entre 1 et 100
+
+import random
+
+aleatoire = random.randint(1,100)
+
+Demandez à l'utilisateur de deviner ce nombre aléatoire.
+Le nombre de tentatives est limité à 6
+Le script indiquera à l'utilisateur si le nombre aléatoire est supérieur ou inférieur
+au nombre saisi.
+Le script doit gérer le cas d'un nombre saisi non valide
