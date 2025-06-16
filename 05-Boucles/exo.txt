@@ -14,6 +14,7 @@ Votre choix:
 
 """)
 
-- Tant que choix est différent le menu s'affiche
+- Tant que le choix est différent de q le menu s'affiche
 - Tant que le choix saisi est invalide, redemandez la saisie d'un autre
 - Si le choix est valide, demandez la saisie de 2 nombres (float) et affichez le résultat
+- Le script doit gérer le cas d'une division par 0
