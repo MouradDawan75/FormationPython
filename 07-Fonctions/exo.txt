@@ -4,7 +4,7 @@
 3) Fonction qui renvoie l'élément le plus petit d'une liste d'entiers. 
 4) Fonction qui affiche la table de multiplication d'un nombre, où le nombre, 
 le premier multiple et le dernier multiple sont des paramètres.
-def table_multiplication(nombre,premier_mutipe,dernier_multiple):
+def table_multiplication(nombre,premier_multipe,dernier_multiple):
     pass
 
 ex: table_multiplication(11,1,10)
