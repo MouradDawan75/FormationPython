@@ -52,3 +52,5 @@ print("""
 chaine sur plusieurs
 lignes.
 """)
+
+print('Prénom:',prenom,'Age:',age, sep="/")
