@@ -37,6 +37,11 @@ from math import * # on doit connaitre toutes les fonctions du module
 #import mypackage.myfunctions # importer tout le module
 from mypackage.myfunctions import fonction1 # importer un élément spécifique
 
-fonction1()
+#fonction1()
 
+# Un module importé est toujours exécuté
 
+#print(__name__)
+
+# __name__ == '__main__' pour un module exécuté
+# __name__ == 'nom_module pour un module importé

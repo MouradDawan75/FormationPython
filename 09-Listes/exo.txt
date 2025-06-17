@@ -1,0 +1,14 @@
+1) nombres = range(-10,10)
+Nouvelle ne contenant que les nombres positifs
+
+2) nombres = range(10)
+Nouvelle liste en inversant uniquement les nombres impairs: [0,-1,2,-3,4.....]
+
+3)
+lst = [1,7,4,2,9,5]
+Affichez le nombre d'éléments supérieurs à 3
+
+4) 
+Définir une fonction qui prend en paramètres une liste d'entiers et qui renvoie
+la somme des entiers pairs distincts.
+Ex: [2,2,4,4,6,6] -> résultat attendu: 12
