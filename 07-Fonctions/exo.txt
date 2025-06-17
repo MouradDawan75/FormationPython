@@ -1,0 +1,32 @@
+1) Fonction qui renvoie la somme d'une liste d'entiers.
+
+2) Fonction qui renvoie la moyenne d'une liste d'entiers. 
+3) Fonction qui renvoie l'élément le plus petit d'une liste d'entiers. 
+4) Fonction qui affiche la table de multiplication d'un nombre, où le nombre, 
+le premier multiple et le dernier multiple sont des paramètres.
+def table_multiplication(nombre,premier_mutipe,dernier_multiple):
+    pass
+
+ex: table_multiplication(11,1,10)
+Affichage attendu:
+11 x 1 = 11
+11 x 2 = 22
+.
+.
+11 x 10 = 110
+
+5) Affichez un menu:
+
+choix = input("""
+1- Convertir heures en minutes -> fct
+2- Convertir minutes en heures -> fct
+3- Quitter
+
+""")
+
+- Tant que choix != '3' le menu s'affiche
+- Si choix == '1': demandez la saisie du nombre d'heures à convertir et affichez le résultat
+Ex: heures saisie 3 -> Affichez: 3h = 120m
+
+- Si choix == '2': demandez a saisie du nombre de minutes à convertir et affichez le résultat
+Ex: minutes saisie 90 -> Affichez: 90m = 1h 30m
