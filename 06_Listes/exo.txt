@@ -13,4 +13,4 @@ Afficher le nombre d'éléments supérieurs à 3
 4)
 listA = [1,2,3,4]
 listB = [1,2]
-Différence entre 2 listes -> résulta est une liste = [3,4]
+Différence entre 2 listes (listA - listB) -> résultat est une liste = [3,4]

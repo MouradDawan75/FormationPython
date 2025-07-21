@@ -125,3 +125,21 @@ print(sol1)
 
 sol2 = [e for e in nombres if e % 2 == 0 if e > 4] # aucune limite sur le nbre de if
 print(sol2)
+
+print(">>>>>>> random pour les listes:")
+
+from random import choice, choices, shuffle
+
+cartes = [x for x in range(1,11)]
+
+print('__choice: élément aléatoire:')
+
+print(choice(cartes))
+
+print('__choices: sous ensemble aléatoire:')
+print(choices(cartes,k=5))
+
+print("__shuffle: mélanger les éléments d'une liste")
+
+shuffle(cartes)
+print(cartes)

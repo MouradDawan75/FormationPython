@@ -32,7 +32,7 @@ print(">>>>>>>>> Caractères d'echappement")
 print("\tCeci est une chaine\nsur plusieurs\nlignes.")
 
 chemin = "c:\\test\\notes.txt"
-chemin2 = r"c:\test\notes.txt" # row string - chaine brute
+chemin2 = r"c:\test\notes.txt" # raw string - chaine brute
 
 print(chemin2)
 

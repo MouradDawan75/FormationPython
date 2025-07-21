@@ -1,0 +1,8 @@
+1) lire un mot saisi et construire un dict dont es clés sont les caractères du mot saisi et les valeurs
+sont le nombre de chaque caractères dans le mot.
+ex: test -> d = {'t': 2, 'e':1, 's': 1}
+
+2) 
+nombres = range(10)
+Construire un un dict dont les clés sont les nombres pairs et les valeurs sont les clés puissance 2
+-> dictionary comprehension
