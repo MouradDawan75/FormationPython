@@ -1,0 +1,18 @@
+1) Afficher tous les nombres de 1 (inclus) à 15 (inclus) -> range()
+2) Afficher tous les nombres impairs de 1 (inclus) à 15 (inclus) -> range()
+3) Affichez le menu:
+
+choix = input("""
+
+- Addition: tapez a
+- Soustraction: tapez s
+- Multiplication: tapez m
+- Division: tapez d
+- Quitter: tapez q
+
+""")
+
+- Tant que choix est différent de q le menu s'Afficher
+- Tant que le choix n'est pas valide, redemander la saisie d'un autre
+- Pour un choix valide, demandez la saisie de 2 nombres et affichez le résultat
+- Le script doit gérer le cas d'une division par 0
