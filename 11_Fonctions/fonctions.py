@@ -201,3 +201,63 @@ print(result)
 
 e = (1,)
 print(type(e))
+
+print('__________________ yield:')
+
+# Le mot clé yield est un outil puissant qui permet de créer des générateurs facilitant la gestion de grandes quantités
+# sans surcharger la mémoire.
+# Contrairement à return, le yield ne términe la fonction, il suspend son exécution et reprend là où elle s'était
+# arrêtée.
+
+def count_up_to(max_value):
+    count = 1
+    while count <= max_value:
+        yield count
+        count += 1
+
+
+counter = count_up_to(5) # avec un return dans fct, 5 objets sont déjà chargé en mémoire
+# for v in counter:
+#     print(v)
+
+print(next(counter))
+print(next(counter))
+print(next(counter))
+print(next(counter))
+print(next(counter))
+
+# sans boucle
+def simple_generateur():
+    yield 'première valeur'
+    yield 'deuxiéme valeur'
+    yield 'troisième valeur'
+
+gen = simple_generateur()
+
+print(next(gen))
+print(next(gen))
+print(next(gen))
+
+# Quand utiliser yield au lien de return:
+# A utiliser lorsqu'on traite des quantité importantes de données.
+# Permet principalement d'économiser la mémoire
+
+# Cas pratique: lecture d'un fichier volumineux ligne par ligne
+
+def read_large_file(path):
+    with open(path, 'r') as flux:
+        #return flux.readlines() -> remplacer le return par yield -> 1 seule ligne à la fois
+        for line in flux:
+            yield line.strip()
+
+
+line = read_large_file('11_Fonctions\\demo.txt')
+
+print(next(line))
+print(next(line))
+print(next(line))
+print(next(line))
+
+
+for ligne in read_large_file('11_Fonctions\\demo.txt'):
+    print(ligne)
