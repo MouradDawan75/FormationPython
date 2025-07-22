@@ -125,3 +125,79 @@ def generate_list(*elements):
     return list(elements)
     
 print(generate_list(15,48,75))
+
+# Bonnes pratiques: langages objets
+# 5 principes SOLID
+# Single of responsablity
+# Open/close: code ouvert à l'extenson mais fermé
+# Liskov Subtitution: les objets enfants sont substituables aux objets parents
+# Interfaces segrégation
+# Dependency Inversion
+
+print('>>>>>>>>>>>> variables locales - variables globales:')
+
+b = 10
+c = 10
+
+def modifier():
+    global b
+    b = 15
+    c = 15
+    v = 12
+    print('***************************************************')
+    print(locals())
+    print('***************************************************')
+
+modifier()
+
+print(f'b = {b} - c = {c}')
+
+print(globals())
+
+print("____________________ fonction en paramètre d'une autre fonction")
+
+def add(x,y):
+    return x+y
+
+def soustraction(x,y):
+    return x-y
+
+def my_calculs(func,x,y):
+    return func(x,y)
+
+print(my_calculs(add,10,5))
+print(my_calculs(soustraction,10,5))
+
+# Expression Lambda: fonction anonyme: param1,param2 : instruction
+# appelée aussi fonction à 1 seule instruction avec un return implicite
+
+# A utiliser avec des fcts prenant en params d'autres fcts
+
+print(my_calculs(lambda x,y : x*y, 10,5))
+
+print('________________ fonctions natives de Python:')
+
+# print()
+# input()
+# quit()
+
+lst = [10,5,2,4,13]
+
+print(len(lst))
+print(sum(lst))
+print(min(lst))
+print(max(lst))
+print(round(2.5897, 2))
+
+
+def tri(x):
+    return x >= 5
+
+print("fonction explicite:",list(filter(tri, lst)))
+print("expression lambda:",list(filter(lambda x : x >= 5,lst)))
+
+result = sorted(range(-5,6), key=lambda x: x**2)
+print(result)
+
+e = (1,)
+print(type(e))
