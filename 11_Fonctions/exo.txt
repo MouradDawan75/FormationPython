@@ -1,0 +1,11 @@
+Définir un menu:
+
+choix = input("""
+1- Convertir heures en minutes
+2- Convertir minutes en heures
+3- Quitter
+""")
+
+- si choix == '1' -> demandez nbre d'heures a convertir -> affichez: ex: 2 -> 2h = 120m
+- si choix == '2'  -> demandez nbre de minutes à convertir -> affichez: ex: 90: 90m = 1h 30m
+# Définir les 2 fonctions
