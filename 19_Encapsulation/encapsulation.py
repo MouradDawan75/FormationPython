@@ -11,7 +11,7 @@ r = surface(h,l)
 
 # Encapsulation:
 # 1- Regrouper dans une seule et mm classe tous les params et toutes les fcts qui concernent le mm sujet
-# 2- Pas d'accès publique aux attributs d'une classe. L'accès passe par les accésseurs (get/set)
+# 2- Pas d'accès publique aux attributs d'une classe. L'accès passe forcément par les accésseurs (get/set)
 
 
 class Rectangle:

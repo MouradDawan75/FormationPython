@@ -1,0 +1,51 @@
+@startuml
+class Animal {
+    emettre_son()
+        nom
+    age
+    __init__()
+}
+class Chat {
+    dormir()
+    emettre_son()
+        couleur
+    __init__()
+}
+class Chien {
+    emettre_son()
+    test()
+    test2()
+        __init__()
+}
+class Giraffe {
+        __init__()
+}
+class Cat {
+    meow()
+        __init__()
+}
+class Talker {
+    say()
+        __init__()
+}
+class TalkerCat {
+        __init__()
+}
+class Cat {
+    parler()
+        name
+    __init__()
+}
+class Talker {
+    parler()
+        name
+    __init__()
+}
+class TalkingCat {
+    parler()
+        __init__()
+}
+Animal <|-- Chat
+Animal <|-- Chien
+Animal <|-- Giraffe
+@enduml
