@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: mypackage
+Version: 1.0
+Summary: Test installation local package
+Home-page: #
+Author: Mourad
+Author-email: mmahrane@dawan.fr
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary

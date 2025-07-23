@@ -1,0 +1,10 @@
+Pour installer un package en local
+- Créer un fichier setup.py en dehors du package
+- Importer la fonction setup depuis le module setuptools
+- mettre en place une conf. dans la fct setup
+- Ouvrir l'invite de commandes de windows sur le fichier setup et exécuter la commande suivante:
+
+pip install .
+
+Pour installer un package dans pypi:
+https://www.turing.com/kb/how-to-create-pypi-packages
