@@ -14,7 +14,16 @@ def lecture_fichier_texte(chemin:str) -> str:
 # fonction d'écriture dans un fichier 
 
 def ecriture_fichier_texte(chemin:str, contenu:str, mode_ajout:bool=False):
+    """Fonction d'ecrirure dans un fichier texte
 
+    Args:
+        chemin (str): chemin absolut du fichier. Ex: c:\\rep\\file.txt
+        contenu (str): texte à insérer dans le fichier
+        mode_ajout (bool, optional): Pour activer le mode ajout, mettre ce paramètre à True. Defaults to False.
+
+    Raises:
+        Exception: renvoie une exception si chemin invalide
+    """
     mode = 'w'
     if mode_ajout:
         mode = 'a'

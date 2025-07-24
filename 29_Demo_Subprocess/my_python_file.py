@@ -1,0 +1,1 @@
+print('>>>>>>>>>>> Script dans un fichier python........')
