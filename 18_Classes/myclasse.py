@@ -62,7 +62,7 @@ class GestionUser:
 GestionUser.insert(u1)
 GestionUser.insert(u2)
 
-# Le principe de la déciration en Python est d'appliquer un décorateur à une fct afin de retourner un nouvel (une fct généralement)
+# Le principe de la décoration en Python est d'appliquer un décorateur à une fct afin de retourner un nouvel (une fct généralement)
 # Un decorator est une fct qui prend en params une autre fct et qui renvoie une nouvelle
 
 
