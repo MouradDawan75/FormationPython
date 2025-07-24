@@ -80,3 +80,13 @@ def addition(x:int, y:int) -> int:
 # pip install pdoc
 # commande pour générer la doc html:
 # pdoc 30_Documentation//documentation.py -o docs
+
+# Command-line interface
+# pdoc includes a feature-rich "binary" program for producing HTML and plain text documentation of your modules. 
+# For example, to produce HTML documentation of your whole package in subdirectory 'build' of the current directory,
+#  using the default HTML template, run:
+
+# pdoc --html --output-dir build my_package
+# If you want to omit the source code preview, run:
+
+# $ pdoc --html --config show_source_code=False my_package
